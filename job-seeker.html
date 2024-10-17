@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Job Portal - Job Seeker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>JobKhujo</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="employer.html">Employer</a></li>
+          <li><a href="partner.html">Business Partner</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="job-search">
+      <div class="container">
+        <h2>Search for Jobs</h2>
+        <form id="search-form">
+          <input type="text" id="keyword" placeholder="Job Title or Keywords" required>
+          <input type="text" id="location" placeholder="Location" required>
+          <button type="submit" class="btn">Search</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="job-listings">
+      <div class="container">
+        <h2>Available Jobs</h2>
+        <div id="jobs-container">
+          <!-- Job listings will be dynamically inserted here -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Job Portal. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>

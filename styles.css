@@ -1,0 +1,352 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.1;
+  background-color: #f4f4f4;
+  color: #333;padding: 4px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  align-items: center;
+}
+
+header {
+  background-color: #007BFF;
+  color: white;
+  padding: 1rem 0.5; /* Reduce top and bottom padding */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  font-size: 1.1rem; /* Adjust font size as needed */
+  box-shadow: #ccc 3px;
+}
+
+
+header h1 {
+  display: flex;
+  align-items: center; /* Align the logo and text vertically */
+  justify-content: center; /* Center the h1 content */
+}
+
+.hero h2, .hero p {
+  color: black;
+}
+.logo {
+  width: 80px; /* Adjust the size as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+nav {
+  height: 60px; /* Set a height for alignment */
+}
+
+nav .logo {
+  align-self: center; /* Vertically center the logo */
+}
+
+nav{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: hsl(210, 67%, 99%);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #e9ecef;
+  background-image: url(image/1.jpg);
+  height: 60vh;
+  padding: 4rem 0;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  margin-top: 4.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+.features {
+  display: flex; /* Use flexbox to align items in a row */
+  align-items: flex-start; /* Align items to the start of the flex container */
+  margin-bottom: 2rem; /* Space below the features section */
+}
+
+.feature {
+  flex: 1; /* Allow text content to take equal space */
+  margin-right: 1rem; /* Space between text and image */
+}
+
+.feature-image {
+  flex: 0 0 300px; /* Set fixed width for the image container */
+  margin-left: 23rem; /* Space between the text and image */
+  margin-top: -440px; /* Adjust this value to move the image higher */
+}
+
+.feature-image img {
+  max-width: 130%; /* Ensure the image is responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+
+
+/* Hero image */
+.hero-image {
+  flex: 1; /* Allow the image to take equal space */
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: 600px;
+  width: 1800px;
+  border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+
+.cta-buttons .btn {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-buttons .btn:hover {
+  background-color: #007BFF;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.feature {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 5px;
+  width: 30%;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+.feature h3 {
+  margin-bottom: 1rem;
+  color: #007BFF;
+}
+
+.feature p {
+  font-size: 1rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Forms */
+form {
+  max-width: 600px;
+  margin: 2rem auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+form button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #218838;
+}
+
+/* Job Listings */
+.job-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-3px);
+}
+
+.job-card h3 {
+  color: #007BFF;
+  margin-bottom: 0.5rem;
+}
+
+.job-card p {
+  margin-bottom: 0.5rem;
+}
+
+.apply-btn {
+  background-color: #17a2b8;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+  background-color: #138496;
+}
+
+/* Posted Jobs */
+.posted-job-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.posted-job-card h3 {
+  color: #28a745;
+  margin-bottom: 0.5rem;
+}
+
+.posted-job-card p {
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+  .hero-image {
+    margin-top: 1rem;
+  }
+}
